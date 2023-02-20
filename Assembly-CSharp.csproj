@@ -40,6 +40,8 @@
      <Compile Include="Assets/Scripts/TrailCamera.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/CharacterController.cs" />
+     <Compile Include="Assets/Low Poly Fruits/resources/fruits_tester.cs" />
+     <Compile Include="Assets/Scripts/HealthManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

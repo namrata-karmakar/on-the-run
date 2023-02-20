@@ -15,6 +15,11 @@ public class CharacterController : MonoBehaviour
     public bool rightSide2;    
 
     // Update is called once per frame
+    void Start(){
+        player1.transform.position = player1Position1.transform.position;
+        player2.transform.position = player2Position1.transform.position;
+    }
+    
     void Update()
     {
         Player1Movement();
