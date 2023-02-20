@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // private bool turnLeft, turnRight;
-    public float speed = 7.0f;
+    // public float speed = 0.0f;
     private CharacterController myCharacterController;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         // else if (turnRight)
         //     transform.Rotate(new Vector3(0f, 90f, 0f));
 
-        myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
-        myCharacterController.Move(transform.forward * speed * Time.deltaTime);
+        // myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
+        // myCharacterController.Move(transform.forward * speed * Time.deltaTime);
     }
 }

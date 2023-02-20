@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18018606, g: 0.22559257, b: 0.30678663, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802917, g: 0.22572428, b: 0.30693048, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -51.07
+      value: -35.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalRotation.w
@@ -215,7 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b273184a0964036f88ea248f93b05fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
 --- !u!95 &317440962
 Animator:
   serializedVersion: 5
@@ -236,7 +235,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!1001 &371774923
+--- !u!1001 &634352423
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -249,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.25
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalPosition.y
@@ -257,7 +256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -51.07
+      value: -35.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
       propertyPath: m_LocalRotation.w
@@ -293,32 +292,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
---- !u!1 &371774924 stripped
+--- !u!1 &634352424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9140049441a0675a9851d4977dcc6b95, type: 3}
-  m_PrefabInstance: {fileID: 371774923}
+  m_PrefabInstance: {fileID: 634352423}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &371774925
+--- !u!114 &634352425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371774924}
+  m_GameObject: {fileID: 634352424}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b273184a0964036f88ea248f93b05fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
---- !u!95 &371774926
+--- !u!95 &634352426
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371774924}
+  m_GameObject: {fileID: 634352424}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0aaf44a038837a5c5b8ab29e17de1671, type: 2}
@@ -331,13 +329,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!143 &371774927
+--- !u!143 &634352427
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371774924}
+  m_GameObject: {fileID: 634352424}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -520,14 +518,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 3.74, z: -3.99}
+  m_LocalRotation: {x: 0.6999063, y: -0, z: -0, w: 0.7142347}
+  m_LocalPosition: {x: 39.2, y: 77.2, z: -33.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 88.839, y: 0, z: 0}
 --- !u!54 &963194229
 Rigidbody:
   m_ObjectHideFlags: 0
