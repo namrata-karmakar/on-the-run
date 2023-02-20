@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{A6109342-8FAC-02B7-650A-31E9E54427F6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextureMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TextureMovement.cs" Line="17" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="on-the-run" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="704fac8a-4839-4078-ba04-c57f5d613bda" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
