@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RandomObjectGenerator : MonoBehaviour
 {
-    public GameObject[] models; // Array mit allen Modellen, aus denen zufällig ausgewählt werden soll
-    public int numberOfObjects = 10; // Anzahl der zufällig generierten Objekte
+    public GameObject[] models; // Array mit allen Modellen, aus denen zufï¿½llig ausgewï¿½hlt werden soll
+    public int numberOfObjects = 10; // Anzahl der zufï¿½llig generierten Objekte
     public float range = 10f; // Bereich, in dem die Objekte platziert werden
     public Transform[] spawnPoints; // Array mit den Transform-Objekten, an denen die Objekte platziert werden sollen
     public float spawnInterval = 1f; // Zeitintervall zwischen den Spawns
@@ -14,6 +14,9 @@ public class RandomObjectGenerator : MonoBehaviour
 
     private float currentSpawnInterval; // Aktuelles Zeitintervall zwischen den Spawns
     private int objectsSpawned; // Anzahl der bereits generierten Objekte
+    public Vector3 movementDirection = new Vector3(1f, 0f, 0f); // Bewegungsrichtung der Gameobjects 
+
+    public float floatingSpeed;
 
     void Start()
     {
@@ -27,17 +30,21 @@ public class RandomObjectGenerator : MonoBehaviour
     {
         while (objectsSpawned < numberOfObjects)
         {
-            // Zufälliges Modell auswählen und instanziieren
+            // Zufï¿½lliges Modell auswï¿½hlen und instanziieren
             int randomModelIndex = Random.Range(0, models.Length);
             GameObject randomModel = Instantiate(models[randomModelIndex]);
 
-            // Zufälligen Spawn-Point auswählen und Position des Gameobjects setzen
+            // Zufï¿½lligen Spawn-Point auswï¿½hlen und Position des Gameobjects setzen
             int randomSpawnIndex = Random.Range(0, spawnPoints.Length);
             Vector3 randomPosition = new Vector3(Random.Range(-range, range), 0, Random.Range(-range, range));
             randomModel.transform.position = spawnPoints[randomSpawnIndex].position + randomPosition;
 
-            // Zufällige Rotation des Gameobjects setzen
+            // Zufï¿½llige Rotation des Gameobjects setzen
             randomModel.transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+
+            randomModel.GetComponent<Rigidbody>().velocity = movementDirection * floatingSpeed;
+
+
 
             // Zeitintervall zwischen den Spawns reduzieren
             currentSpawnInterval -= spawnIntervalReduction;
@@ -46,7 +53,7 @@ public class RandomObjectGenerator : MonoBehaviour
                 currentSpawnInterval = minSpawnInterval;
             }
 
-            // Auf die nächste Spawn-Runde warten
+            // Auf die nï¿½chste Spawn-Runde warten
             objectsSpawned++;
             yield return new WaitForSeconds(currentSpawnInterval);
         }

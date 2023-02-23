@@ -349,7 +349,10 @@
 "Assets/Low Poly Fruits/resources/fruits_tester.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/HealthManager.cs"
+"Assets/Scripts/ObjcetDespawner.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/RandomObjectGenerator.cs"
+"Assets/Scripts/ScoreSystem.cs"
 "Assets/Scripts/TextureMovement.cs"
 "Assets/Scripts/TrailCamera.cs"
 -langversion:9.0
