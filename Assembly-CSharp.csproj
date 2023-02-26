@@ -36,15 +36,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/RandomObjectGenerator.cs" />
+     <Compile Include="Assets/Scripts/CharacterController.cs" />
+     <Compile Include="Assets/Scripts/ObjcetDespawner.cs" />
+     <Compile Include="Assets/Scripts/HealthBar.cs" />
+     <Compile Include="Assets/Scripts/ScoreSystem.cs" />
      <Compile Include="Assets/Scripts/TextureMovement.cs" />
+     <Compile Include="Assets/Low Poly Fruits/resources/fruits_tester.cs" />
      <Compile Include="Assets/Scripts/TrailCamera.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-     <Compile Include="Assets/Scripts/CharacterController.cs" />
-     <Compile Include="Assets/Low Poly Fruits/resources/fruits_tester.cs" />
      <Compile Include="Assets/Scripts/HealthManager.cs" />
-     <Compile Include="Assets/Scripts/RandomObjectGenerator.cs" />
-     <Compile Include="Assets/Scripts/ScoreSystem.cs" />
-     <Compile Include="Assets/Scripts/ObjcetDespawner.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
