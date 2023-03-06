@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // private bool turnLeft, turnRight;
-    // public float speed = 0.0f;
+    public int maxHealth = 4;
+    public int currentHealth;
     private CharacterController myCharacterController;
+
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
         myCharacterController = GetComponent<CharacterController>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // turnLeft = Input.GetKeyDown(KeyCode.A);
-        // turnRight = Input.GetKeyDown(KeyCode.D);
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            TakeDamage(1);
+        }
+    }
 
-        // if (turnLeft)
-        //     transform.Rotate(new Vector3(0f, -90f, 0f));
-        // else if (turnRight)
-        //     transform.Rotate(new Vector3(0f, 90f, 0f));
-
-        // myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
-        // myCharacterController.Move(transform.forward * speed * Time.deltaTime);
+    void TakeDamage(int damage) {
+        currentHealth -= damage; 
+        healthBar.SetHealth(currentHealth);
     }
 }
