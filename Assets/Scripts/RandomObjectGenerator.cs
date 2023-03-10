@@ -44,8 +44,6 @@ public class RandomObjectGenerator : MonoBehaviour
 
             randomModel.GetComponent<Rigidbody>().velocity = movementDirection * floatingSpeed;
 
-
-
             // Zeitintervall zwischen den Spawns reduzieren
             currentSpawnInterval -= spawnIntervalReduction;
             if (currentSpawnInterval < minSpawnInterval)
