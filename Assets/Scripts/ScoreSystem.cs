@@ -7,9 +7,11 @@ using UnityEngine;
 public class ScoreSystem : MonoBehaviour
 {
     public int points;
+    private PlayerMovement pm;
     void Start()
     {
         points = 0;
+        pm = this.GetComponent<PlayerMovement>();
     }   
 
     private void OnTriggerEnter(Collider col){
@@ -20,7 +22,9 @@ public class ScoreSystem : MonoBehaviour
         if(col.gameObject.tag == "Stone"){
             points--;
             Destroy(col.gameObject);
-            //Implement Health damage here 
+            //Implement Health damage here
+            pm.TakeDamage(1);
+            
         }
     }
 
